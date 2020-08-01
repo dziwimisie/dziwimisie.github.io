@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<title>Wydawnictwo Dziwimisie</title>
+<style>
+body {
+ background-color:#dde;
+ color:#333;
+ margin:50px;
+ font-size:30px;
+}
+</style>
+</head>
+<body>
+Wydawnictwo
+</body>
+</html>
