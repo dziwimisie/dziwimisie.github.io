@@ -1,27 +1,103 @@
 <!doctype html>
 <html>
 <head>
-<title>Wydawnictwo Dziwimisie</title>
-<style>
-html {
- height:100%;
-}
-body {
- background-color:white;
- color:#333;
- margin-top:4%;
- height:100%;
- text-align:center;
- font-family:sans-serif;
-}
-.logo-img {
- max-height:70%;
-}
-</style>
+    <title>Wydawnictwo Dziwimisie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+     html {
+	 height:100%;
+     }
+     body {
+	 background-color:white;
+	 color:#d5796c;
+	 margin:0px;
+	 height:100%;
+	 text-align:center;
+	 font-family: 'Lato';
+	 overflow: hidden;
+     }
+     h1 {
+	 font-family: 'Lato', Sans-serif;
+	 font-weight:normal;
+     }
+     .logo-img {
+	 max-height:70%;
+     }
+     .main {
+	 margin:0;
+	 display: flex;
+	 flex-wrap:nowrap;
+	 align-items: center;
+	 height:100%;
+	 xbackground-color:pink;
+	 justify-content:center;//space-around;
+     }
+     .cover {
+	 display: flex;
+
+	 align-items: center;
+	 display:inline-block;
+
+	 height:100%;
+	 padding: 0 20px 0 0 !important;
+	 flex-shrink:3;
+     }
+     .coverimg {
+	 -webkit-box-shadow: 9px 10px 20px 0px rgba(176,176,176,1);
+	 -moz-box-shadow: 9px 10px 20px 0px rgba(176,176,176,1);
+	 box-shadow: 9px 10px 20px 0px rgba(176,176,176,1);
+	 
+	 height:100%;
+     }
+     .covertext
+     {
+	 margin:0;
+	 height:100%;
+	 xfont-size:1.5em;
+	 xmin-width:600px;
+	 display:inline-block;
+	 width:500px;
+	 xbackground-color:yellow;
+	 padding:0 15px;
+	 display:flex;
+	 flex-direction:column;
+	 justify-content: space-between;
+     }
+     .logo {
+	 margin:30px 0;
+     }
+     .maintext {
+	 margin-top:30px;
+     }
+     .icon {
+	 margin:10px;
+     }
+     @media screen and (orientation:portrait) {
+	 body {
+	     overflow: auto;
+	 }
+	 .main {
+	     flex-direction: column;
+	     height:auto;
+	 }
+	 .cover {
+	     height:auto;
+	     padding:0;
+	 }
+	 .coverimg {
+	     margin:20px 0;
+	     height:auto;
+	     width:50%;
+	 }
+	 .covertext {
+	     width:90%;
+         }
+	 .maintext {
+	     margin-top:0px;
+	 }
+     }
+    </style>
 </head>
 <body>
-<img src="logo.jpg" class="logo-img">
-<br>
-<a href="https://www.facebook.com/dziwimisie"><img src="fb.png" style="margin-top:3%;height:6%;"></a>
-</body>
+    <div class="main"><div class="cover"> <img src="jumi.jpg" class="coverimg"></div><div class="covertext"><div class="maintext" ><h1>Premiera już wkrótce</h1><p>Jumi jest dziewczynką, której emocje wywołują tornado, z którym nie potrafi sobie poradzić. Chciałaby cieszyć się i bawić z przyjaciółmi, ale musi najpierw pokonać swoje tornado.To książka pełna emocji, nie tylko tych dobrych, ale i tych złych, z którymi wszyscy musimy próbować sobie poradzić.</p></div><div class="logo"><a href="https://www.facebook.com/dziwimisie"><img src="logo.png"></div></div></div></body>
 </html>
